@@ -1,29 +1,44 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import VueRouter, { RawLocation, RedirectOption, RouteConfig } from 'vue-router'
+import translate from '@/plugins/translate'
+
+const load = (component : string) => {
+  return () => import(`@/views/${ component }.vue`)
+}
 
 Vue.use(VueRouter)
 
-const routes: Array<RouteConfig> = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
+const routes: Array<RouteConfig> = [{
+  path: '/:locale',
+  component: {
+    template: '<router-view></router-view>',
   },
-  {
-    path: '/about',
+  beforeEnter: translate.routeMiddleware,
+  children: [{
+    path: '',
+    name: 'Home',
+    component: load('Home'),
+  }, {
+    path: 'about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    component: load('About'),
+  }, {
+    path: 'register',
+    name: 'Register',
+    component: load('Register'),
+  }],
+  }, {
+    path: '*',
+    redirect: (): RawLocation => {
+      return translate.defaultLocale as RawLocation;
+    },
+  },
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
 })
 
 export default router

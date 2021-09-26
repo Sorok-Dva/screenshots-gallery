@@ -1,0 +1,55 @@
+{
+  "partials": {
+    "menu": {
+      "home": "Home",
+      "about": "Апред",
+      "whoami": "Кто мы ?",
+      "contact": "Контакт",
+      "register": "Регистр",
+      "login": "Авторизоваться",
+      "logout": "Выйти",
+      "my_gallery": "Моя галерея",
+      "en": "English",
+      "fr": "Français",
+      "ru": "Россия"
+    },
+    "footer": {
+      "visitors": "{count} visitors"
+    }
+  },
+  "main": {
+    "welcome": "Привет из {title}!",
+    "welcome_subtext": "Сохраняйте и делитесь своими скриншотами в один клик !",
+    "screenshots_uploaded": "Загружено {count} скриншота !"
+  },
+  "about": {
+    "welcome": "Добро пожаловать на страницу \"О нас\" !"
+  },
+  "pages": {
+    "index": {
+      "welcome_msg_header_bg_info": "Welcome to your customer interface",
+      "welcome_msg_header_bg_info_p_lead": "This interface is under construction.",
+      "discord_join_msg": "Join us on Discord !"
+    },
+    "login": {
+      "title_card_header": "Log in",
+      "form_email_label": "E-mail address",
+      "form_email_ph": "Your e-mail address",
+      "form_password_label": "Password",
+      "form_password_ph": "Your Password",
+      "form_submit_btn_loading_text": "Connection in progress",
+      "form_submit_btn": "Login"
+    },
+    "register": {
+      "title": "Register",
+      "card-lead": "Register to save and manage your screenshots.",
+      "form_email_label": "E-mail address",
+      "form_email_muted": "We'll never share your email with anyone else.",
+      "form_email_ph": "Your e-mail address",
+      "form_password_label": "Password",
+      "form_password_ph": "Your Password",
+      "form_submit_btn_loading_text": "Registration in progress",
+      "form_submit_btn": "Register"
+    }
+  }
+}

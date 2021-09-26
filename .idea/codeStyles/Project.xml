@@ -1,16 +1,31 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
-    <HTMLCodeStyleSettings>
-      <option name="HTML_UNIFORM_INDENT" value="true" />
-    </HTMLCodeStyleSettings>
+    <option name="OTHER_INDENT_OPTIONS">
+      <value>
+        <option name="INDENT_SIZE" value="2" />
+        <option name="TAB_SIZE" value="2" />
+      </value>
+    </option>
     <TypeScriptCodeStyleSettings version="0">
+      <option name="JSDOC_INCLUDE_TYPES" value="true" />
       <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
       <option name="FORCE_SEMICOLON_STYLE" value="true" />
+      <option name="SPACE_BEFORE_TYPE_COLON" value="true" />
       <option name="USE_DOUBLE_QUOTES" value="false" />
       <option name="FORCE_QUOTE_STYlE" value="true" />
-      <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
+      <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+      <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
       <option name="SPACES_WITHIN_IMPORTS" value="true" />
+      <option name="SPACES_WITHIN_INTERPOLATION_EXPRESSIONS" value="true" />
+      <option name="IMPORT_PREFER_ABSOLUTE_PATH" value="TRUE" />
     </TypeScriptCodeStyleSettings>
+    <codeStyleSettings language="CSS">
+      <indentOptions>
+        <option name="INDENT_SIZE" value="2" />
+        <option name="CONTINUATION_INDENT_SIZE" value="2" />
+        <option name="TAB_SIZE" value="2" />
+      </indentOptions>
+    </codeStyleSettings>
     <codeStyleSettings language="HTML">
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />
@@ -26,11 +41,11 @@
       </indentOptions>
     </codeStyleSettings>
     <codeStyleSettings language="TypeScript">
-      <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />
         <option name="CONTINUATION_INDENT_SIZE" value="2" />
         <option name="TAB_SIZE" value="2" />
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
       </indentOptions>
     </codeStyleSettings>
   </code_scheme>

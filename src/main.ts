@@ -1,18 +1,16 @@
 import Vue from 'vue'
-import VueI18n from 'vue-i18n'
-// import { messages, defaultLocale } from '@/i18n'
 import App from './App.vue'
+import Notifications from 'vue-notification'
+
+import { i18n } from './i18n'
 import router from './router'
+import translate from './plugins/translate'
 import store from './store'
 
 Vue.config.productionTip = false
-Vue.use(VueI18n)
+Vue.prototype.$i18nRoute = translate.i18nRoute.bind(translate)
 
-const i18n = new VueI18n({
-  messages: {},
-  locale: 'en-US',
-  fallbackLocale: 'en-US',
-})
+Vue.use(Notifications)
 
 new Vue({
   name: 'Paste Your Screens',

@@ -32,7 +32,6 @@ footer {
   padding-left: 0;
   margin-bottom: 0;
 }
-
 .thumbnail {
   margin-bottom: 30px;
   padding: 0px;
@@ -52,7 +51,6 @@ footer {
   padding: 0 1rem;
   border: 0;
 }
-
 .item.list-group-item .img-event {
   float: left;
   width: 30%;
@@ -61,12 +59,10 @@ footer {
 .item.list-group-item .list-group-image {
   margin-right: 10px;
 }
-
 .item.list-group-item .thumbnail {
   margin-bottom: 0px;
   display: inline-block;
 }
-
 .item.list-group-item .caption {
   float: left;
   width: 70%;
@@ -103,13 +99,9 @@ footer {
   vertical-align: middle;
 }
 
-.cursor {
-  cursor: pointer
-}
-
 img.gallery-img {
-  float: right;
-  height: auto;
+  float:right;
+  height:auto;
   vertical-align: middle;
 }
 

@@ -1,0 +1,65 @@
+{
+  "partials": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "whoami": "Who am I",
+      "contact": "Contact",
+      "register": "Register",
+      "login": "Login",
+      "logout": "Logout",
+      "my_gallery": "My Gallery",
+      "en": "English",
+      "fr": "Français",
+      "ru": "Россия"
+    },
+    "footer": {
+      "visitors": "{count} visitors"
+    }
+  },
+  "pages": {
+    "index": {
+      "welcome_msg_header_bg_info": "Welcome to your customer interface",
+      "welcome_msg_header_bg_info_p_lead": "This interface is under construction.",
+      "discord_join_msg": "Join us on Discord !"
+    },
+    "login": {
+      "title_card_header": "Log in",
+      "form_email_label": "E-mail address",
+      "form_email_ph": "Your e-mail address",
+      "form_password_label": "Password",
+      "form_password_ph": "Your Password",
+      "form_submit_btn_loading_text": "Connection in progress",
+      "form_submit_btn": "Login"
+    },
+    "register": {
+      "title": "Register",
+      "card-lead": "Register to save and manage your screenshots.",
+      "form_email_label": "E-mail address",
+      "form_email_muted": "We'll never share your email with anyone else.",
+      "form_email_ph": "Your e-mail address",
+      "form_password_label": "Password",
+      "form_password_ph": "Your Password",
+      "form_submit_btn_loading_text": "Registration in progress",
+      "form_submit_btn": "Register"
+    }
+  },
+  "main": {
+    "welcome": "Welcome to {title}",
+    "welcome_subtext": "Save and share your screenshots in one click !",
+    "screenshots_uploaded": "{count} screenshots have been uploaded !"
+  },
+  "about": {
+    "welcome": "Welcome to the About page!"
+  },
+  "error": {
+    "UNKNOWN_USER": "Unknown User",
+    "ACCOUNT_NOT_VALIDATED": "You must validate your account. Check your emails (SPAMS).",
+    "WRONG_PASSWORD": "Wrong Password.",
+    "ALREADY_LOGGED": "You're already connected.",
+    "NOT_CONNECTED": "You're not connected",
+    "MUT_BE_CONNECTED": "You must be connected",
+    "TOO_MANY_LOGIN_TRY": "Trop de tentatives de connexion sur ce compte. Veuillez réessayer dans 15 minutes.",
+    "FORBIDDEN": "Forbidden Access."
+  }
+}
