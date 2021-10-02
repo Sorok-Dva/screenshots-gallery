@@ -15,6 +15,7 @@ const translate = {
   getCurrentLocale: i18n.locale as Locale,
   
   setCurrentLocale: (locale: Locale) => {
+    if (!localStorage.lang) localStorage.setItem('lang', i18n.locale)
     i18n.locale = locale
   },
   getUserSupportedLocale: () => {

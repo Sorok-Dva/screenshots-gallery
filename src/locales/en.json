@@ -9,6 +9,9 @@
       "login": "Login",
       "logout": "Logout",
       "my_gallery": "My Gallery",
+      "translateToEN": "Translate in english",
+      "translateToFR": "Traduire en français",
+      "translateToRU": "Перевести на русский язык",
       "en": "English",
       "fr": "Français",
       "ru": "Россия"
@@ -41,7 +44,15 @@
       "form_password_label": "Password",
       "form_password_ph": "Your Password",
       "form_submit_btn_loading_text": "Registration in progress",
-      "form_submit_btn": "Register"
+      "form_submit_btn": "Register",
+      "passwordRequirements": {
+        "title": "Password Requirements",
+        "subtitle": "Thanks to follow the password rules for your safety :",
+        "chars": "Minimum {count} characters.",
+        "upper": "At least {count} uppercase.",
+        "symbol": "At least one special character.",
+        "num": "At least {count} number(s)."
+      }
     }
   },
   "main": {

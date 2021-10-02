@@ -1,0 +1,12 @@
+<template>
+<!--  <meta property="og:title" content="{{ screen.dataValues.title }} | PasteUrScreens.tk - Paste and share your screenshot in one click !" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://pasteurscreens.tk/{{ src }}" />
+
+  <div class="container-fluid" style="margin-top:40px; padding: 30px;">
+    <h3 class="text-center">{{ screen.dataValues.title }} - {{ screen.dataValues.views }} views.</h3>
+    <div class="text-center" style="padding:15px;">
+      <img src="{{ src }}" alt="Screenshot hosted on pasteurscreens.tk" style="box-shadow: 7px 4px 20px 10px #aaa">
+    </div>
+  </div>-->
+</template>

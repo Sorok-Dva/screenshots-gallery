@@ -9,6 +9,9 @@
       "login": "Connexion",
       "logout": "Déconnexion",
       "my_gallery": "Ma gallerie",
+      "translateToEN": "Translate in english",
+      "translateToFR": "Traduire en français",
+      "translateToRU": "Перевести на русский язык",
       "en": "English",
       "fr": "Français",
       "ru": "Россия"
@@ -36,7 +39,7 @@
       "form_submit_btn": "Connexion"
     },
     "register": {
-      "title_card_header": "Inscription",
+      "title": "Inscription",
       "card-lead": "Inscrivez-vous pour sauvegarder et gérer vos screenshots.",
       "form_email_label": "Adresse e-mail",
       "form_email_muted": "Nous ne partagerons jamais votre email avec quiconque.",
@@ -44,7 +47,15 @@
       "form_password_label": "Mot de passe",
       "form_password_php": "Votre mot de passe",
       "form_submit_btn_loading_text": "Validation de l'inscription",
-      "form_submit_btn": "S'inscrire"
+      "form_submit_btn": "S'inscrire",
+      "passwordRequirements": {
+        "title": "Exigences de mot de passe",
+        "subtitle": "Merci de satisfaire toutes les exigences suivantes pour votre sécurité :",
+        "chars": "Au moins {count} caractères.",
+        "upper": "Au moins {count} majuscule(s).",
+        "symbol": "Au moins un caractère spécial.",
+        "num": "Au moins {count} chiffre(s)"
+      }
     }
   },
   "main": {

@@ -26,6 +26,10 @@ const routes: Array<RouteConfig> = [{
     path: 'register',
     name: 'Register',
     component: load('Register'),
+  }, {
+    path: 'login',
+    name: 'Login',
+    component: load('Login'),
   }],
   }, {
     path: '*',

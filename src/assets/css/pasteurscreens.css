@@ -107,6 +107,14 @@ footer {
   cursor: pointer
 }
 
+.bad-rule {
+  color: red
+}
+
+.good-rule {
+  color: green
+}
+
 img.gallery-img {
   float: right;
   height: auto;
