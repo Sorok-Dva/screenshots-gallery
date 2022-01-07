@@ -1,3 +1,4 @@
+<script src="../../../../Downloads/pasteurscreens-1.1/helpers/back.error.js"></script>
 <template>
   <div class="container" style="margin-top:50px;">
     <div class="row justify-content-center">
@@ -76,18 +77,29 @@
         </div>
       </div>
     </div>
+    <notifications
+        position="bottom left"
+        class="notify"
+        width="350px"
+        animation-type="css"
+        :closeOnClick="true"
+        :duration="5000"
+        :max="1"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import $ from 'jquery'
+import axios from 'axios'
 
 @Component
 export default class Register extends Vue {
   private email: string = ''
   private password: string = ''
 
+  public apiUrl: string = process.env.VUE_APP_SERVER_URL
   public buttonEnabled: boolean = false
   public passwordStrengthTips: boolean = false
   public passwordRulesRegex: Array<{
@@ -106,6 +118,7 @@ export default class Register extends Vue {
     pattern: '[!@#$%^&*]',
     target: 'symbol',
   }]
+
   public passwordRules = {
     chars: {
       bad: true,
@@ -128,6 +141,7 @@ export default class Register extends Vue {
       good: false,
     }
   }
+
   public errors: Array<string> = []
 
   checkForm() {
@@ -165,6 +179,19 @@ export default class Register extends Vue {
       this.passwordRules.global.bad = true
       this.passwordRules.global.good = false
     }
+  }
+
+  sendForm() {
+    axios.post(`${this.apiUrl}/user/login`, {})
+    .then((data: Record<string, any>) => {
+      console.log(data)
+    }).catch(reason => {
+      this.$notify({
+        title: '⚠️ Unable to login :',
+        text: reason,
+        type: 'error',
+      })
+    })
   }
 }
 </script>

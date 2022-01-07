@@ -30,6 +30,11 @@ const routes: Array<RouteConfig> = [{
     path: 'login',
     name: 'Login',
     component: load('Login'),
+  }, {
+    path: 's:id',
+    name: 'Screen',
+    component: load('Screen'),
+    props: true,
   }],
   }, {
     path: '*',

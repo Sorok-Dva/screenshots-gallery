@@ -105,3 +105,9 @@ dist
 
 # Itellij project
 .idea/
+
+# Server data
+/server/data/
+
+# Client data
+/public/assets/images/upload

@@ -31,7 +31,6 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "server/**/*.ts",
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"

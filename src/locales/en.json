@@ -48,7 +48,7 @@
       "passwordRequirements": {
         "title": "Password Requirements",
         "subtitle": "Thanks to follow the password rules for your safety :",
-        "chars": "Minimum {count} characters.",
+        "chars": "At least {count} characters.",
         "upper": "At least {count} uppercase.",
         "symbol": "At least one special character.",
         "num": "At least {count} number(s)."

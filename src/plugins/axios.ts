@@ -28,7 +28,6 @@ export const $api = Axios.create({
   }
 })
 
-
 export default {
   install(Vue: VueConstructor) {
     Vue.prototype.$api = $api

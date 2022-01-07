@@ -1,6 +1,6 @@
 module.exports = {
   lintOnSave: false,
-  outputDir: "./dist/client",
+  outputDir: './dist/client',
   runtimeCompiler: true,
   pluginOptions: {
     i18n: {
@@ -8,6 +8,13 @@ module.exports = {
       fallbackLocale: 'fr',
       localeDir: 'locales',
       enableInSFC: false
+    }
+  },
+  configureWebpack: {
+    devServer: {
+      watchOptions: {
+        ignored: [/node_modules/],
+      }
     }
   }
 }

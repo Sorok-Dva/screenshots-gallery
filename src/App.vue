@@ -63,7 +63,7 @@ export default Vue.extend({
 
 <style>
 @import './assets/css/bootstrap.css';
-@import './assets/css/main.min.css';
+@import './assets/css/main.css';
 @import './assets/css/lux.min.css';
 @import './assets/css/animate.css';
 @import './assets/css/pasteurscreens.css';
